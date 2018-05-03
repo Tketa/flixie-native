@@ -24,7 +24,7 @@ export default class MovieCard extends React.Component {
   render() {
     return (
       <View>
-        <TouchableHighlight onPress={() => this.props.navigation.navigate('MovieDetailScreen', { movie: this.props.movie })} >
+        <TouchableHighlight onPress={() => alert('Tell me more!')} >
           <Image style={styles.image} source={{ uri: 'https://image.tmdb.org/t/p/w500/' + this.props.movie.poster_path }} />
         </TouchableHighlight>
         <Text>{this.props.movie.title}</Text>
